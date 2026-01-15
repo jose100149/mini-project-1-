@@ -21,16 +21,19 @@ const brownHorse = document.querySelector("#brown-horse");
 const advanceBlue = () => {
   blue_position += 1;
   changePosition(blueHorse, blue_position);
+  checkWinner(blue_position, "blue");
 };
 
 const advancePink = () => {
   pink_position += 1;
   changePosition(pinkHorse, pink_position);
+  checkWinner(pink_position, "pink");
 };
 
 const advanceBrown = () => {
   brown_position += 1;
   changePosition(brownHorse, brown_position);
+  checkWinner(brown_position, "brown");
 };
 
 // Check for a winner
@@ -44,5 +47,3 @@ const checkWinner = (position, color) => {
 blueButton.addEventListener("click", advanceBlue);
 pinkButton.addEventListener("click", advancePink);
 brownButton.addEventListener("click", advanceBrown);
-
-// this is just to show the end of the code//
