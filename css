@@ -24,10 +24,6 @@ body {
 .horse {
   display: flex;
   gap: 5px;
-  color: white;
-  border: brown;
-  border-color: black;
-  border-radius: 2.5px;
 }
 
 .track {
@@ -44,9 +40,11 @@ button {
 
 #blue-button:hover {
   background-color: lightblue;
-} #pink-button:hover {
+}
+#pink-button:hover {
   background-color: pink;
-} #brown-button:hover {
+}
+#brown-button:hover {
   background-color: #91807e;
 }
 
